@@ -18,8 +18,8 @@
   <body class="page">
     <header class="header">
       <div class="header_menu">
-      <h1 class="header_title">&lt;/HTML&gt;</h1>
-      <h2 class="header_subtitle">ЗАКРЫВАЮЩИй ТЕГ</h2>
+      <a class="header_title">&lt;/HTML&gt;</a>
+      <h1 class="header_subtitle">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -398,7 +398,7 @@
                 направление.</p>  
               <span class="span">
                 <button class="card__icon-button is-liked">
-                  <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
+                  <svg class="like-icon " xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
                     <g class="heart">  
                       <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 
                       12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 
@@ -450,10 +450,10 @@
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <h2 class="button__text">Вставьте <br>дискету, чтобы <br>продолжить</h2>
-      </div>  
-      <button class="button button__text"
-      type="button"
-      onclick="window['dialog-id'].close();">OK</button>
+      </div>
+      <form method="dialog">
+        <button class="dialog_button button button__text" type="submit">OK</button>
+      </form>  
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

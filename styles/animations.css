@@ -12,3 +12,202 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes theme-menu__button {
+    0% {
+        left: -15px;
+    }
+    50% {
+        left: -20px;
+    }
+    100% {
+        left: -15px;
+    }
+  }
+
+.theme-menu__button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+  
+.theme-menu__button:focus {
+    outline: none;
+    opacity: 0.6;
+}
+  
+.theme-menu__button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    background: var(--accent-color, #000);
+    opacity: 0.6;
+    transition: width 0.5s;
+}
+  
+.theme-menu__button:focus-visible::after {
+    width: 100%;
+}
+  
+.theme-menu__button:disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+  
+.theme-menu__button:disabled::before {
+    content: "▶";
+    position: absolute;
+    z-index: 2;
+    left: -15px;
+    animation: theme-menu__button 0.5s ease-in-out infinite alternate;
+}
+
+.card__icon-button:hover {
+    border: 2px solid var(--accent-color, #000);
+}
+
+.card__icon-button:focus {
+    outline: none;
+}
+  
+.card__icon-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
+  transition: 0.3s ease;
+  border: 2px solid var(--accent-color, #000);
+}
+
+.card__icon-button:focus-visible .like-icon {
+    transition: 0.3s ease;
+    border-color: (--accent-color, #000);
+}
+
+.heart .core {
+    transition-delay: .03s;
+}
+  
+.heart:hover .core {
+    fill: var(--heart_hover, #000);
+    transition: fill .3s linear;
+}
+  
+.heart:active .core {
+    fill: var(--red_heart, #FF0000);
+    transition: fill .3s linear;
+}
+  
+.heart .main-body {
+    fill: transparent;
+    transition: fill .3s linear;
+}
+  
+.heart:hover .main-body {
+    fill: var(--heart_hover, #000);
+    transition: fill .3s linear;
+    transition-delay: .05s;
+}
+  
+.heart:active .main-body {
+    fill: var(--red_heart, #FF0000);
+    transition: fill .3s linear;
+    transition-delay: .05s;
+}
+  
+.like-icon.is-liked .heart .core {
+    fill: var(--red_heart, #FF0000);
+    transition: fill .3s linear;
+}
+  
+.like-icon.is-liked .heart .main-body {
+    fill: var(--red_heart, #FF0000);
+    transition: fill .3s linear;
+}
+  
+.like-icon.is-liked .heart .contour {
+    fill: var(--red_heart, #FF0000);
+    transition: fill .3s linear;
+    transition-delay: .06s;
+}
+  
+.like-icon.is-liked {
+    animation: heart .3s .1s linear 1 normal;
+}
+  
+@keyframes heart {
+    to {
+      scale: 1.5;
+    }
+}
+
+.like-icon.is-liked .sparks {
+    opacity: 0; 
+    animation: sparks .3s .3s ease-in 1 normal;
+}
+  
+@keyframes sparks {
+    to {
+      opacity: 1; 
+    }
+}
+
+.like-icon .heart .contour {
+    fill: var(--heart_hover, #000);
+    transition: fill .1s linear;
+}
+ 
+.card__like-button:focus,
+.footer_button:focus,
+.dialog_button:focus  {
+  outline: none;
+}
+
+.card__like-button:focus-visible,
+.footer_button:focus-visible,
+.dialog_button:focus-visible  {
+  box-shadow: 2px 2px 0 0 var(--accent-color, #000);
+  transition: 0.3s ease;
+}
+
+.card__like-button::after,
+.footer_button::after,
+.dialog_button::after {
+	content:'';
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 0;
+	transition: 0.5s ease;
+}
+
+.card__like-button::after,
+.dialog_button::after {
+	height: 36px;
+}
+
+.footer_button::after {
+	height: 80px;
+}
+
+@media (width> 375px) {
+    .footer_button::after {
+      height: 51px;
+    } 
+}
+
+.card__like-button:hover::after,
+.footer_button:hover::after,
+.dialog_button:hover::after {
+  content:'';
+  width: 100%;
+  background: var(--accent-color, #000);
+}
+
+.card__like-button:hover .button__text,
+.footer_button:hover .button__text,
+.footer_button:hover .floppy,
+.dialog_button:hover .button__text {
+  color: var(--background-color, #FFF);
+  z-index: 2;
+}

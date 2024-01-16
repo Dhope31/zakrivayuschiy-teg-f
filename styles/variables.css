@@ -1,4 +1,5 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* В этом файле будут храниться все значения переменных в исходном состоянии, 
+а так же их изменения в зависимости от ширины устройства */
 
 :root {
     --main_font: 'Inter';
@@ -14,23 +15,11 @@
     --heart_sparks: #FF0000;
     --heart_hover: #000; 
     --red_heart: #FF0000;
+    --wght_title: 700;
+    --wght: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main_font: 'Inter';
-        --additional_font: 'PressStart2P';
-        --body_text-weight: 465;
-        --title_text-weight: 785;
-        --background-color: #000;
-        --accent-color: #00CC14;
-        --background-gradient-color_vertical: #000;
-        --background-gradient-color_hor_one: #007f0c;
-        --background-gradient-color_hor_two: #004306;
-        --heart_contur: #00CC14;
-        --heart_sparks: #FF0000;
-        --heart_hover: #00CC14; 
-        --red_heart: #FF0000;
-    }
-  }
+
+
+
   
