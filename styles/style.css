@@ -18,22 +18,22 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main_font, sans-serif);
-  color: var(--accent-color, #000);
+  color: var(--accent-color, #00CC14);
   font-size: 18px;
-  font-variation-settings: 'wdth' var(--body_text-weight, 400);
-  background-color: var(--background-color, #FFF);
+  font-variation-settings: 'wdth' var(--body_text-weight, 465);
+  background-color: var(--background-color, #000);
   background-image: repeating-linear-gradient(
   90deg, 
-  var(--background-gradient-color_vertical, #d3d3d3) 0 2px, 
+  var(--background-gradient-color_vertical, #000) 0 2px, 
   transparent 2px 4px),
   repeating-linear-gradient(
   180deg, 
-  var(--background-gradient-color_vertical, #d3d3d3) 0 2px, 
+  var(--background-gradient-color_vertical, #000) 0 2px, 
   transparent 2px 4px),
   linear-gradient(
   180deg, 
-  var(--background-gradient-color_hor_one, #e7e7e7) 0 0.01%, 
-  var(--background-gradient-color_hor_two, #1a1a1a) 100%);
+  var(--background-gradient-color_hor_one, #007f0c) 0 0.01%, 
+  var(--background-gradient-color_hor_two, #004306) 100%);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -54,10 +54,10 @@
   margin-top: 102px;
   margin-bottom: 102px;
   padding: 120px 14px 25px;
-  background-color: var(--background-color, #FFF);
+  background-color: var(--background-color, #000);
   height: 327px;
   width: 100%;
-  border: 2px solid var(--accent-color, #000);
+  border: 2px solid var(--accent-color, #00CC14);
 }
 
 .header_title {
@@ -149,7 +149,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: var(--background-color, #FFF);
+  background-color: var(--background-color, #000);
 }
 
 @media (width> 375px) {
@@ -159,8 +159,8 @@
 }
 
 .card_title {
-  font-variation-settings: 'wdth' var(--wdth_title, 700);
-  border: 2px solid var(--accent-color, #000);
+  font-variation-settings: 'wdth' var(--wdth_title, 765);
+  border: 2px solid var(--accent-color, #00CC14);
   padding: 6px 50px 6px 10px;
   font-size: 18px;
 }
@@ -180,8 +180,8 @@
   width: 100%;
   height: 100%;                                   
   object-fit: cover;
-  border-left: 2px solid var(--accent-color, #000);
-  border-right: 2px solid var(--accent-color, #000);
+  border-left: 2px solid var(--accent-color, #00CC14);
+  border-right: 2px solid var(--accent-color, #00CC14);
 }
 
 .filter_brightness {
@@ -223,13 +223,13 @@
   font-family: var(--additional_font, fantasy);
   font-weight: 400;
   font-size: 14px;
-  color: var(--accent-color, #000); /**/
+  color: var(--accent-color, #00CC14); 
   z-index: 1;
   text-shadow:
-  -1px 0 var(--background-color, #fff), 
-  0 1px var(--background-color, #fff), 
-  1px 0 var(--background-color, #fff), 
-  0 -1px var(--background-color, #fff);
+  -1px 0 var(--background-color, #000), 
+  0 1px var(--background-color, #000), 
+  1px 0 var(--background-color, #000), 
+  0 -1px var(--background-color, #000);
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
@@ -241,10 +241,10 @@
   }
 }
 
-@supports((text-stroke: 1px var(--background-color, #fff)) or (-webkit-text-stroke: 1px var(--background-color, #fff))) {
+@supports((text-stroke: 1px var(--background-color, #000)) or (-webkit-text-stroke: 1px var(--background-color, #000))) {
   .text_image {
-    -webkit-text-stroke: 1px var(--background-color, #fff);
-    text-stroke: 1px var(--background-color, #fff);
+    -webkit-text-stroke: 1px var(--background-color, #000);
+    text-stroke: 1px var(--background-color, #000);
     text-shadow: none;
   }
 } 
@@ -253,9 +253,9 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: 2px solid var(--accent-color, #000);
+  border: 2px solid var(--accent-color, #00CC14);
   padding: 25px 25px 22px 25px;  
-  font-variation-settings: 'wdth' var(--wdth, 400);
+  font-variation-settings: 'wdth' var(--wdth, 465);
 }
 
 .text {
@@ -302,7 +302,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--accent-color, #000);
+  border: 2px solid var(--accent-color, #00CC14);
   cursor: pointer;
   position: relative;
   background-color: var(--background-color, #000);
@@ -340,7 +340,7 @@
   flex-direction: column;
   height: 84px;
   width: 310px;
-  background-color: var(--background-color, #FFF);
+  background-color: var(--background-color, #000);
 }
 
 @media (width> 375px) {
@@ -362,8 +362,8 @@
   display: flex;
   flex-direction: column;
   padding: 32px 32px;
-  background-color: var(--background-color, #FFF);
-  border: 2px solid var(--accent-color, #000);
+  background-color: var(--background-color, #000);
+  border: 2px solid var(--accent-color, #00CC14);
   overflow-y: hidden;
 }
 
@@ -385,8 +385,8 @@ dialog::backdrop {
 }
 
 .dialog_text_and_icon {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 39px 198px;
   margin-bottom: 30px;
   gap: 20px;
 }
@@ -400,6 +400,7 @@ dialog::backdrop {
 .dialog_text_and_icon .button__text {
   text-transform: uppercase;
   line-height: 150%;
+  max-width: 200px; 
 }
 
 .floppy {
@@ -407,7 +408,7 @@ dialog::backdrop {
   height: 28px;
   position: relative;
   z-index: 2;
-  color: var(--bg-button, #fff);
+  color: var(--bg-button, #00CC14);
   mix-blend-mode: difference;
 }
 
@@ -423,7 +424,7 @@ dialog::backdrop {
   height: 39px;
   position: relative;
   z-index: 2;
-  color: var(--accent-color, #000);
+  color: var(--accent-color, #00CC14);
 }
 
 .dialog_button {

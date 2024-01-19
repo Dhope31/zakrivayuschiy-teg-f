@@ -159,13 +159,13 @@
  
 .card__like-button:focus,
 .footer_button:focus,
-.dialog_button:focus  {
+.dialog_button:focus {
   outline: none;
 }
 
 .card__like-button:focus-visible,
 .footer_button:focus-visible,
-.dialog_button:focus-visible  {
+.dialog_button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color, #000);
   transition: .3s ease;
 }

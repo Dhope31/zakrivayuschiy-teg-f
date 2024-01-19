@@ -4,20 +4,20 @@
 :root {
     --main_font: 'Inter';
     --additional_font: 'PressStart2P';
-    --body_text-weight: 400;
-    --title_text-weight: 700;
-    --background-color: #FFF;
-    --accent-color: #000;
-    --background-gradient-color_vertical: #d3d3d3;
-    --background-gradient-color_hor_one: #e7e7e7;
-    --background-gradient-color_hor_two: #1a1a1a;
-    --heart_contur: #000;
+    --body_text-weight: 465;
+    --title_text-weight: 785;
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --background-gradient-color_vertical: #000;
+    --background-gradient-color_hor_one: #007f0c;
+    --background-gradient-color_hor_two: #004306;
+    --heart_contur: #00CC14;
     --heart_sparks: #FF0000;
-    --heart_hover: #000; 
+    --heart_hover: #00CC14; 
     --red_heart: #FF0000;
-    --wght_title: 700;
-    --wght: 400;
-    --bg-button: #fff;
+    --wght_title: 785;
+    --wght: 465;
+    --bg-button: #00CC14;
 }
 
 
